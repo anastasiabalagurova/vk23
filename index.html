@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src= "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <div class="container-main">
+<div class="header"> 
+        <div class="almostlogo">
+            <div class="menuItem black">VK23</div>
+        <!-- <div class="menuItem">16 JUNE 2023</div> -->
+        <div class="menuItem">SHOWCASE</div>
+        <div class="menuItem">SPEAKERS CALL</div>
+    </div>
+    <div class="socialm">
+            <ul>
+              <li><a href=""><i class="fa fa-share-alt "></i></a></li>
+              <li><a href=""><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa fa-vimeo"></i></a></li>
+            </ul>
+        
+
+    
+    
+</div>
+<div class="bottompart">
+    <div class="topicWord">Visualizing</div>
+    <div class="topicWord">uncertainty</div>
+</div>
+
+    </div>
+    <div id="top-image"></div>
+    
+    </div> 
+
+    <div class="containerMargin">
+<div class="textBig">
+    VK 23 invites you to discuss and explore uncertainty in a new light. Let’s find prevalent questions and explanations through information design and data visualization to unravel the complexity.
+</div>
+ </div> 
+
+    <div class="container-80 blue">
+
+             </div> 
+
+
+             <div class="container-80">
+
+            </div> 
+             <div class="container-80 black">
+
+            </div> 
+        
+    <div id="mouse-circle"></div>
+</body>
+<script>
+$(document).ready(function() {
+var movementStrength = 25;
+var height = movementStrength / $(window).height();
+var width = movementStrength / $(window).width();
+$("#top-image").mousemove(function(e){
+          var pageX = e.pageX - ($(window).width() / 2);
+          var pageY = e.pageY - ($(window).height() / 2);
+          var newvalueX = width * pageX * -1 - 25;
+          var newvalueY = height * pageY * -1 - 50;
+          $('#top-image').css("background-position", newvalueX+"px     "+newvalueY+"px");
+});
+});
+
+
+//social media
+
+$("li:nth-child(1)").on("click", function(){
+  $("li").toggleClass("active");
+});
+
+$("a").on("click", function(e){
+  e.preventDefault();
+});
+
+
+//mouse cursor circle
+//code by Ciprian Popescu
+
+if (window.matchMedia("(min-width: 768px)").matches) {
+    let mousePosX = 0,
+        mousePosY = 0,
+        mouseCircle = document.getElementById("mouse-circle");
+
+    document.onmousemove = (e) => {
+        mousePosX = e.pageX;
+        mousePosY = e.pageY;
+    };
+
+    let delay = 6,
+        revisedMousePosX = 0,
+        revisedMousePosY = 0;
+
+    function delayMouseFollow() {
+        requestAnimationFrame(delayMouseFollow);
+
+        revisedMousePosX += (mousePosX - revisedMousePosX) / delay;
+        revisedMousePosY += (mousePosY - revisedMousePosY) / delay;
+
+        mouseCircle.style.top = revisedMousePosY + "px";
+        mouseCircle.style.left = revisedMousePosX + "px";
+    }
+    delayMouseFollow();
+}
+
+
+</script>
+</html>
