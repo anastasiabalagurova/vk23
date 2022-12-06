@@ -77,7 +77,7 @@ body {
 #top-image {
   background-color: var(--red);
   height: 75%;
-  background-image: url("/images/bg.jpg");
+  background-image: url("images/bg.jpg");
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
