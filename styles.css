@@ -9,13 +9,14 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Inter';
+  font-weight: 400;
   color: var(--black);
 
 }
@@ -72,10 +73,26 @@ body {
 }
 
 
+.menu a {
+border: 0;
+}
+
+
+
+
 .intro{
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.joinus{
+  padding-bottom: 84px;
+}
+
+.sponsors{
+  padding-top:0;
+  padding-bottom: 78px;
 }
 
 #top-image {
@@ -106,14 +123,18 @@ body {
 }
 
 .topicWord {
-  font-size: 40px;
-
+  font-size: 46px;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: 'Inter';
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
 
+
+.notActiveYet{
+  opacity: 0.3;
+}
 /* dot */
 
 
@@ -134,8 +155,13 @@ section{
   flex-direction: column;
 }
 
+.background{
+  padding-top: 64px;
+}
+
 footer{
-  padding: 32px 2% 64px 2%;
+  padding: 32px 2% 32px 2%;
+  display: flex;
 }
 
 .intro{
@@ -143,7 +169,7 @@ footer{
 }
 
 .about{
-  min-height: 100vh;
+  min-height: 90vh;
   flex-direction: row;
 }
 
@@ -217,28 +243,31 @@ footer{
 
 .subtopicsItem {
   width: 32.4%;
+  padding-top: 1rem;
   height: fit-content;
   border-top: 2px solid var(--green);
-  margin-bottom: 64px;
+  margin-bottom: 4rem;
+
 }
 
 
 .subtipicsItemTitle {
   padding-top: 24px;
   padding-top: 24px;
+  font-family: 'Inter';
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1.2rem;
 }
 
-
-.subTitle {
+h2{
+  font-family: 'Inter';
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 27px;
-  padding-top: 24px;
 }
+
 
 .subtitleCol{
   width: 32.4%;
@@ -252,18 +281,22 @@ footer{
 }
 
 p {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.4rem;
   width: 90%;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
+  margin:0;
 }
 
 .subTags {
-  font-size: 20px;
+  font-family: 'Inter';
   font-weight: 400;
-  line-height: 27px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
   color: var(--green);
+  padding-top: 1.4rem;
 }
 
 
@@ -271,7 +304,8 @@ p {
   font-size: 3.5rem;
   margin-top: auto;
   height: fit-content;
-  font-family: sans-serif;
+  font-family: 'Inter';
+  font-weight: 400;
   width: 83.8%;
 }
 
@@ -280,6 +314,7 @@ p {
   margin-top: auto;
   margin-bottom: 0.5%;
   line-height: 28px;
+  font-family: 'Inter';
   font-weight: 400;
   font-style: normal;
   color: var(--black);
@@ -299,17 +334,22 @@ p {
   border: var(--border) solid;
   padding: .2em .6em;
   margin: 0 0rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
   border-radius: 100px;
   background-color: var(--black);
   height: fit-content;
   width: fit-content;
   position: relative;
-  font-family: sans-serif;
+  font-family: 'Inter';
   font-weight: 400;
   font-style: normal;
   color: var(--white);
 }
+
+.joinBtn a{
+  border: 0;
+  color: var(--white);}
 
 a{
   text-decoration: none;
@@ -386,6 +426,8 @@ a{
 .footer p{
   font-size: 0.9rem;
   line-height: 1.2rem;
+  margin:0;
+  padding:0;
 }
 
 .footerCol{
@@ -404,15 +446,33 @@ a{
   padding: 0;
   margin:0;
   color: var(--white);
+  gap: 4%;
+
 }
 
 .footerInfo a{
   color: var(--white);
 }
 
+
+.footerInfo p{
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-right: 0;
+  width: 100%;
+  margin-bottom:0;
+}
+
+
 .footerLogo{
   width: 32.4%;
 }
+
+h2{
+  margin-top:0;
+  margin-bottom: 0.6rem;
+}
+
 h3{
   font-size: 1rem;
   text-transform: uppercase;
@@ -468,14 +528,14 @@ h3{
 .logo {
   padding: .2em .6em;
   margin: 0 0rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border-radius: 100px;
   background-color: var(--black);
   height: fit-content;
   width: fit-content;
   position: relative;
   border: var(--border) solid var(--black);
-  font-family: sans-serif;
+  font-family: 'Inter';
   font-weight: 400;
   font-style: normal;
   color: var(--white);
@@ -486,8 +546,7 @@ h3{
 
 
 .menu {
-  font-size: 1.5rem;
-
+  font-size: 1.3rem;
 }
 
 
@@ -533,6 +592,7 @@ h3{
 .sponsor-logos{
   display: flex;
   flex-direction: row;
+  width:60%;
 }
 
 .sponsor-logos a{
@@ -554,19 +614,20 @@ padding-right: 2rem;
   flex-direction: row;
   gap: 1.4%;
   height: fit-content;
-  padding-top: 64px;
-  padding-bottom: 84px;
-}
-
-.infoBackground .logoTitle{
-  align-self: right;
-  font-size: 0.8rem;
-  text-transform: uppercase;
 }
 
 .logoTitle{
+  align-self: right;
+  font-size: 0.7rem;
+  text-transform: uppercase;
   margin-top: 26px;
+  font-family: 'Inter';
+  font-weight: 200;
+letter-spacing: 1px;
+
 }
+
+
 
 @media (max-width: 700px) {
 
@@ -592,6 +653,7 @@ padding-right: 2rem;
 
   .topicWord {
     font-size: 2rem;
+    
   }
 
 
