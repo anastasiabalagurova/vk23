@@ -72,11 +72,15 @@ body {
 }
 
 
-
+.intro{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 #top-image {
   background-color: var(--red);
-  height: 75%;
+  height: 75vh;
   background-image: url("images/bg.jpg");
   background-size: cover;
   width: 100%;
@@ -113,9 +117,6 @@ body {
 /* dot */
 
 
-/**
- * Radial cursor
- */
 #mouse-circle {
   position: absolute;
   width: 16px;
@@ -127,6 +128,24 @@ body {
   box-shadow: 0 0 16px rgba(255, 255, 255, 0);
 }
 
+section{
+  padding: 32px 2% 64px 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  padding: 32px 2% 64px 2%;
+}
+
+.intro{
+  padding: 0;
+}
+
+.about{
+  min-height: 100vh;
+  flex-direction: row;
+}
 
 
 /* socialmedia */
@@ -166,6 +185,12 @@ body {
   top: -1px;
   height: 40px;
   width: 40px;
+}
+
+.socialm li a{
+  display: block;
+  width: 100%;
+  text-decoration: none;
 }
 
 .blue {
