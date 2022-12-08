@@ -12,6 +12,8 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-mob.css">
+
 </head>
 <body>
    
@@ -24,8 +26,8 @@
                     <nav class="menu">
                         <ul>
                             <li><a href="documents/StudentCallPDF.pdf">SHOWCASE</a></li>
-                            <li class = "notActiveYet">WORKSHOPS</li>
-                            <li class = "notActiveYet">SPEAKERS</li>
+                            <li>WORKSHOPS</li>
+                            <li>SPEAKERS</li>
                         </ul>
                         <label for="navbar-checkbox" class="navbar-handle"><img src="images/iconM.svg"></label>
                     </nav>
@@ -165,49 +167,44 @@
     </section>
 
     <section class = "background">
-        <div class="infoBackground">
-            <div class="subtitleCol"><h2>Background</h2></div>
-            <div class="textBlock">
+            <h2>Background</h2>
+            <div class="backgroundText">
                 <p>Visualizing Knowledge (Previously known as Tieto Näkyväksi) has been held every year since 2012 in Helsinki, Finland. In 2017, the event became a part of Aalto University and is now organized in collaboration with a motivated team of students, faculty and staff from the fields of Visual Communication and Information Design.</p>
                 <p>Discover previous editions: <a href="https://vizknowledge.aalto.fi/archive/2021" target="_blank">2021</a> | <a href="https://vizknowledge.aalto.fi/archive/2019" target="_blank">2019</a> | <a href="https://vizknowledge.aalto.fi/archive/2018" target="_blank">2018</a> | <a href="https://vizknowledge.aalto.fi/archive/2017" target="_blank">2017</a></p>
             </div>
-        </div>
     </section>
 
     <section class = "sponsors">
-        <div class="infoBackground">
-            <div class="subtitleCol"><h2>Sponsored by</h2></div>
+            <h2>Sponsored by</h2>
             <div class="sponsor-logos">
                 <a href="https://www.grafia.fi/" target="_blank" title="Grafia">
-                <img src="images/grafia.svg" height="55"style="margin-top: -3px;">
+                <img src="images/grafia.svg" width="432" id="grafia" >
                 </a>
                 <a href="https://www.reaktor.com/" target="_blank" title="Reaktor">
-                    <img src="images/reaktor.svg" height="30" style="margin-top: 5px;">
+                    <img src="images/reaktor.svg" width="291" id="reaktor" >
                 </a>
                 <a href="https://www.accenture.com/fi-en/about/accenture-song-index" target="_blank" title="Accenture Song">
-                    <img src="images/accSong.png" height="27" style="margin-top: 9px;">
+                    <img src="images/accSong.svg" width="696" id="accSong" >
                 </a>
             </div>
-        </div>
     </section>
 
    
 
    
     <section class = "joinus black">
-        <div class="infoBackground">
-            <div class="subtitleCol"><h2>Join Us</h2></div>
+            <h2></h2>
             <div class="joinText">
                 <div>
                     <p>Get involved! Find out more about our speaker call and join the conversation alongside other information design experts.</p>
-                    <button class="joinBtn notActiveYet"href="#">Speakers Call</button>
+                    <div class="joinBtn"href="#">Speakers Call<div class="soon">soon</div></div>
                 </div>
                 <div>
                     <p>Call for student projects! Submit your work for the chance to exhibit as part of the conference and online.</p>
                     <button class="joinBtn"><a href="documents/StudentCallPDF.pdf" target="_blank">Showcase Call</a></button>
                 </div>
             </div>        
-        </div>
+
     </section>
 
     
