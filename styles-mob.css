@@ -1,5 +1,7 @@
 @media (max-width: 700px) {
 
+  /* SECTIONS */
+
   .intro {
     max-height: 650px;
     height: fit-content;
@@ -11,50 +13,26 @@
 
   .header {
     height: fit-content;
-    min-height: 150px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
   }
 
-  .socialm{
-    position: absolute;
+  .topicWord {
+    font-size: 1.3rem;
+    z-index: 20;
   }
 
+  #top-image {
+    background-size: 250%;
+    height: 486px;
+  }
 
   .about {
     flex-direction: column;
     padding-top: 3rem;
-    min-height: fit-content;;
+    min-height: fit-content;
   }
-
-  .background {
-    flex-direction: column;
-    padding-top: 3rem;
-  }
-
-  .sponsors {
-    flex-direction: column;
-  }
-
-  .backgroundText {
-    width: 100%;
-  }
-
-
-  .background h2 {
-    width: 100%;
-    border: 0;
-  }
-
-  .backgroundText {
-    width: 100%;
-    border: 0;
-
-  }
-
-
-  .sponsor-logos img {
-    height: 10vw;
-  }
-
 
   .textBig {
     margin-top: 0;
@@ -66,17 +44,43 @@
     margin-top: 2rem;
   }
 
-  .topicWord {
-    font-size: 1.3rem;
 
+  .subtopics {
+    flex-direction: column;
+    padding-bottom: 0rem;
+    padding-top: 3rem;
   }
 
-  #top-image {
-    background-size: 250%;
+  .subtopicsItem {
+    width: 100%;
   }
 
+  .subtipicsItemTitle {
+    height: 16rem;
+  }
 
+  .background {
+    flex-direction: column;
+    padding-top: 3rem;
+  }
 
+  .backgroundText {
+    width: 100%;
+    border: 0;
+  }
+
+  .background h2 {
+    width: 100%;
+    border: 0;
+  }
+
+  .sponsors {
+    flex-direction: column;
+  }
+
+  .sponsor-logos img {
+    height: 10vw;
+  }
 
   .joinus {
     flex-direction: column;
@@ -92,22 +96,6 @@
     margin-bottom: 2rem;
   }
 
-
-  .subtopics {
-    flex-direction: column;
-    padding-bottom: 0rem;
-    padding-top: 3rem;
-  }
-
-
-  .subtopicsItem {
-    width: 100%;
-  }
-
-  .subtipicsItemTitle {
-    height: 16rem;
-  }
-
   footer{
     margin-top: -3px;
   }
@@ -121,15 +109,23 @@
   }
 
 
+  /* SOCIAL MEDIA */
+
+  .socialm{
+    position: absolute;
+  }
+
+
+  /* DOT */
+ 
   #mouse-circle {
     display: none;
   }
 
 
+
+
   /* NAVIGATION */
-
-
-
   .menu-icon {
     height: 2px;
   }

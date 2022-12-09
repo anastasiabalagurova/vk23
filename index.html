@@ -9,15 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
-<link rel="manifest" href="images/fav/site.webmanifest">
-<link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <link rel="manifest" href="images/fav/site.webmanifest">
+    <link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>VK23 | Visualizing Uncertainty</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles-mob.css">
@@ -34,9 +32,11 @@
                     <input class="menu-btn" type="checkbox" id="menu-btn" />
                     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                     <ul class="menu">
-                        <li><a href="documents/StudentCallPDF.pdf" target="_blank">SHOWCASE</a></li>
-                        <li><a href="#" class="inactive">WORKSHOPS<div class="soon">soon</div></a></li>
-                        <li><a href="#" class="inactive">SPEAKERS<div class="soon">soon</div></a></li>
+                        <li><a href="#">WORKSHOPS</a></li>
+                        <li><a href="https://drive.google.com/file/d/1Q1pAYY0RwmO1M-t4t25mXDZN9vRIci3C/view?usp=share_link"
+                                target="_blank">SHOWCASE CALL</a></li>
+                        <li><a href="https://drive.google.com/file/d/1SyVBLu7guRurc8OyRkv90txKp1Db3_XP/view?usp=share_link"
+                                target="_blank">SPEAKERS CALL</a></li>
                     </ul>
                 </header>
                 <div class="socialm">
@@ -192,7 +192,8 @@
                 Helsinki, Finland. In 2017, the event became a part of Aalto University and is now organized in
                 collaboration with a motivated team of students, faculty and staff from the fields of Visual
                 Communication and Information Design.</p>
-            <p>Discover previous editions: <br><a href="https://vizknowledge.aalto.fi/archive/2021" target="_blank">2021</a>
+            <p>Discover previous editions: <br><a href="https://vizknowledge.aalto.fi/archive/2021"
+                    target="_blank">2021</a>
                 | <a href="https://vizknowledge.aalto.fi/archive/2019" target="_blank">2019</a> | <a
                     href="https://vizknowledge.aalto.fi/archive/2018" target="_blank">2018</a> | <a
                     href="https://vizknowledge.aalto.fi/archive/2017" target="_blank">2017</a></p>
@@ -214,22 +215,22 @@
         </div>
     </section>
 
-
-
-
     <section class="joinus black">
         <h2></h2>
         <div class="joinText">
             <div>
                 <p>Get involved! Find out more about our speaker call and join the conversation alongside other
                     information design experts.</p>
-                <div class="joinBtn" href="#">Speakers Call<div class="soon">soon</div>
-                </div>
+                <button class="joinBtn"><a
+                        href="https://drive.google.com/file/d/1SyVBLu7guRurc8OyRkv90txKp1Db3_XP/view?usp=share_link"
+                        target="_blank">Speakers Call</a></button>
             </div>
             <div>
                 <p>Call for student projects! Submit your work for the chance to exhibit as part of the conference and
                     online.</p>
-                <button class="joinBtn"><a href="documents/StudentCallPDF.pdf" target="_blank">Showcase
+                <button class="joinBtn"><a
+                        href="https://drive.google.com/file/d/1Q1pAYY0RwmO1M-t4t25mXDZN9vRIci3C/view?usp=share_link"
+                        target="_blank">Showcase
                         Call</a></button>
             </div>
         </div>
@@ -237,7 +238,6 @@
     </section>
 
     <div id="mouse-circle"></div>
-
 
     <footer class="black">
         <div class="footerCol">
@@ -263,9 +263,9 @@
         </div>
     </footer>
 
-   
-
     <script>
+
+        //background animation on hover
         $(document).ready(function () {
             var movementStrength = 25;
             var height = movementStrength / $(window).height();
@@ -279,21 +279,12 @@
             });
         });
 
-
         //social media
-
         $("li:nth-child(1)").on("click", function () {
             $("li").toggleClass("active");
-        });
+        });       
 
-        // $(".shareBtn").on("click", function (e) {
-        //     e.preventDefault();
-        // });
-
-
-        //mouse cursor circle
-        //code by Ciprian Popescu
-
+        //mouse cursor circle (code by Ciprian Popescu)
         if (window.matchMedia("(min-width: 768px)").matches) {
             let mousePosX = 0,
                 mousePosY = 0,
@@ -322,5 +313,4 @@
     </script>
 
 </body>
-
 </html>
