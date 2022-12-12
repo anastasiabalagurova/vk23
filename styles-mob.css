@@ -7,20 +7,31 @@
     height: fit-content;
   }
 
-  .headerUp {
-    height: fit-content;
-  }
+
 
   .header {
     height: fit-content;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
+    padding: 10px 2% 5px 2%;
   }
+
+  .headerUp {
+    height: fit-content;
+    background-color: unset;
+    position: relative;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+
 
   .topicWord {
     font-size: 1.3rem;
     z-index: 20;
+    padding: 0;
   }
 
   #top-image {
@@ -113,6 +124,8 @@
 
   .socialm{
     position: absolute;
+    top: 0;
+    right: 0;
   }
 
 
@@ -134,14 +147,20 @@
     border: 0;
   }
 
+
+
   .navMenu li a:hover {
     background-color: var(--white);
     color: var(--black);
     color: var(--pink);
+    border: 0;
   }
 
   .navMenu {
-    position: inherit;
+    position: relative;
+    top:0;
+    left:0;
+    padding:0;
   }
 
   
@@ -149,10 +168,6 @@
   .navMenu li a {
     padding: 0.2rem 0;
     margin: 0;
-  }
-
-  .navMenu a:hover .soon {
-    visibility: hidden;
   }
 
 
